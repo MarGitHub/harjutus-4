@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>
-	harjtus-3s - PHP põhitõed
+	harjtus-4 
 	</title>
 </head>
 
@@ -13,6 +13,46 @@
 <?php echo $float +7; ?><br>
 <?php echo 4/3; ?><br>
 
+<h2>Murdarvude ümardamine</h2>
+
+<?php echo round($float, 1)?> <br>
+<?php echo ceil($float)?><br>
+<?php echo floor($float)?><br>
+
+<h2>Andmetüübi funktsioonid</h2>
+
+<?php is_int($integer = 3); ?><br>
+<?php echo "Kas {$integer} on integer? " . is_int($integer); ?><br>
+
+<?php is_int($integer = $float); ?><br>
+<?php echo "Kas {$integer} on integer? " . is_int($integer); ?><br>
+
+<h2>Jadad (array)</h2>
+
+<?php
+    $numbers = array(4,8,15,16,23,42);
+?>
+<?php echo $numbers[1]; ?><br>
+<?php echo $numbers[0]; ?><br>
+<?php echo $numbers[2]; ?><br>
+<?php echo $numbers[3]; ?><br>
+<?php echo $numbers[4]; ?><br>
+<?php echo $numbers[5]; ?><br><br>
+
+<pre>
+<?php $mixed= array(6, "rebane", "koer", 5.5, array("x", "y", "z")); ?><br>
+<?php echo $mixed[0];?><br>
+<?php echo $mixed[1];?><br>
+<?php echo $mixed[2];?><br>
+<?php echo $mixed[3];?><br>
+<?php echo $mixed[4][0];?><br>
+<?php echo $mixed[4][1];?><br>
+<?php echo $mixed[4][2];?><br>
+<?php $mixed[2] = "kass"; ?>
+<?php echo $mixed[2];?><br>
+<?php $mixed[5] = "kass"; ?>
+<?php $mixed[] = "hobune"; ?>
+</pre>
 
 </body>
 
